@@ -33,3 +33,22 @@
     padding: 0 10px;
     
 }
+
+#groupId{
+    display: block;
+    width: 100%;
+    margin: 0 50px;
+    padding: 0;
+   
+}
+#search-button{
+    background-color: #1a6c51;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    width: 20%;
+    margin:20px 10px 0  750px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px;
+}
