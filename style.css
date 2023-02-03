@@ -36,23 +36,21 @@
 }
 
 #groupId{
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    margin: 0 50px;
+    margin: 20px auto;
     padding: 0;
+    text-align: center;
    
 }
 #search-button{
     background-color: #1a6c51;
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
-    width: 20%;
-    margin:20px 10px 0  50px;
-    border-radius: 50px;
-    text-align: center;
-    padding: 5px;
-}
+    border-radius: 40px;
+     }
 
 .database{
     display: flex;
@@ -63,8 +61,7 @@
 .nutrient{
     display: flex;
     flex-direction: column;
-    /* width: 100% ;
-    margin: auto; */
+   
    }
 
 #output{
@@ -75,7 +72,7 @@
 .recipe{
     display: flex;
     flex-direction: row;
-    margin: auto;
+    flex-wrap: wrap;
 }
 
 #display{
