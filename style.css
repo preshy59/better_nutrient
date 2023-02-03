@@ -52,3 +52,9 @@
     text-align: center;
     padding: 5px;
 }
+
+.database{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
