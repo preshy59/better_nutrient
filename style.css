@@ -1,0 +1,80 @@
+#quote{
+    color: #1a6c51;
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#section1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: none;
+    
+}
+
+#form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% ;
+}
+
+#search-input{
+    display: block;
+    width: 100%;
+    margin: 0 30%;
+    height: 80px;
+    background-color: #f0f8ff;
+    border: 2px solid black;
+    border-radius: 60px;
+    color: black;
+    padding: 0 10px;
+    
+}
+
+#groupId{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0;
+    text-align: center;
+   
+}
+#search-button{
+    background-color: #1a6c51;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 40px;
+     }
+
+.database{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.nutrient{
+    display: flex;
+    flex-direction: column;
+   
+   }
+
+#output{
+    margin: auto;
+    width: 100%;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#display{
+    margin: 20px;
+}
