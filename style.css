@@ -20,3 +20,16 @@
     flex-wrap: wrap;
     width: 100% ;
 }
+
+#search-input{
+    display: block;
+    width: 100%;
+    margin: 0 30%;
+    height: 80px;
+    background-color: #f0f8ff;
+    border: 2px solid black;
+    border-radius: 60px;
+    color: black;
+    padding: 0 10px;
+    
+}
