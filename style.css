@@ -279,7 +279,7 @@ html {
     text-align: center;
     height:368px!important;
     border:none;
-    margin-bottom: 5em;
+    margin-bottom: 1rem;
   }
   .profile-card-1 .background {
     width:100%;
@@ -300,7 +300,7 @@ html {
   .profile-card-1 .profile {
     border-radius: 50%;
     position: absolute;
-    bottom: 50%;
+    bottom: 65%;
     left: 50%;
     max-width: 100px;
     opacity: 1;
@@ -310,14 +310,19 @@ html {
     transform: translate(-50%, 0%);
   }
   .profile-card-1 h2 {
-    margin: 0 0 5px;
+    margin: -22%;
     font-weight: 600;
     font-size:25px;
+    padding-bottom: 65px;
   }
-  .profile-card-1 h2 small {
+  /* .profile-card-1 h2 small {
     display: block;
     font-size: 15px;
-    margin-top:10px;
+    margin-top: 0;
+  } */
+  .profile-card-1 p{
+    margin: 5px;
+   display: block;
   }
   .profile-card-1 i {
     display: inline-block;
