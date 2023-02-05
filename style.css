@@ -165,7 +165,7 @@ html {
     font-weight: 400;
     font-size: 1.5rem;
     color:  #219ebc;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     padding-bottom: 10px;
   }
   
@@ -229,8 +229,7 @@ html {
     color: #999;
   }
   
- 
-  
+
   .legal {
     display: flex;
     flex-wrap: wrap;
@@ -257,9 +256,6 @@ html {
       flex: 1;
     }
     
-    /* .nav__item--extra {
-      flex-grow: 2;
-    } */
     
     .footer__addr {
       flex: 1 0px;
@@ -281,8 +277,9 @@ html {
     width: 100%;
     color: #ffffff;
     text-align: center;
-    height:368px;
+    height:368px!important;
     border:none;
+    margin-bottom: 5em;
   }
   .profile-card-1 .background {
     width:100%;
