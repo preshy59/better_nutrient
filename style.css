@@ -130,11 +130,12 @@ html {
     font-size: 100%;
   }
   
-  body {
+  .footer body {
     font-family: acumin-pro, system-ui, sans-serif;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    /* grid-template-columns: 1fr 1fr auto; */
     font-size: 14px;
     background-color: #f4f4f4;
     align-items: start;
@@ -151,11 +152,12 @@ html {
   }
   
   .footer > * {
-    flex:  1 100%;
+    /* flex:  1 100%; */
+    flex: 1 50%;
   }
   
   .footer__addr {
-    margin-right: 1.25em;
+    margin-right: 2em;
     margin-bottom: 2em;
     margin-left: 2em;
   }
@@ -228,12 +230,29 @@ html {
   .nav__ul a {
     color: #999;
   }
+
+  .short_about{
+    color: #999;
+    margin-right: 4em;
+    margin-left: 2em;
+  }
+  .short_about p {
+   
+    padding-top: 10px;
+    text-align:justify;
+    padding-right: 50px;
+
+  }
   
 
   .legal {
     display: flex;
     flex-wrap: wrap;
     color: #999;
+  }
+
+  .legal p {
+    padding-top: 18px;
   }
     
   .legal__links {
@@ -271,11 +290,11 @@ html {
   /* team cards */
   #team-cards{
  margin-bottom: 100px;
- 
+
 
   }
   .profile-card-1 {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: acumin-pro, system-ui, sans-serif;
     position: relative;
     float: left;
     overflow: hidden;
@@ -319,6 +338,7 @@ html {
     font-weight: 600;
     font-size:25px;
     padding-bottom: 80px;
+    color:#219ebc;
   }
   /* .profile-card-1 h2 small {
     display: block;
@@ -332,9 +352,9 @@ html {
   .profile-card-1 i {
     display: inline-block;
       font-size: 16px;
-      color: #ffffff;
+      color: #219ebc;
       text-align: center;
-      border: 1px solid #fff;
+      border: 1px solid #219ebc;
       width: 30px;
       height: 30px;
       line-height: 30px;
