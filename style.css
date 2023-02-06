@@ -94,12 +94,27 @@ header{
 }
 
 .p-text span{
-  color: rgb(87, 84, 84);
+  color: rgb(0, 0, 0);
   text-shadow: 0 0 0.2em #97f899;
-  -webkit-text-stroke-color: rgb(87, 84, 84);
-  -webkit-text-stroke-width: 0.02em;
+  -webkit-text-stroke-width: 0.01em;
 }
 
+.pic1{
+margin-top: 10px;
+width:11%;
+}
+
+.pic2{
+  margin-top: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+  width:11%;
+}
+
+.pic3{
+  margin-top: 10px;
+  width:12%;
+}
 
 .home .image{
   flex:1 1 40rem;
