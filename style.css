@@ -269,6 +269,11 @@ html {
   /* ----------------------- */
 
   /* team cards */
+  #team-cards{
+ margin-bottom: 100px;
+ 
+
+  }
   .profile-card-1 {
     font-family: 'Open Sans', Arial, sans-serif;
     position: relative;
@@ -300,7 +305,7 @@ html {
   .profile-card-1 .profile {
     border-radius: 50%;
     position: absolute;
-    bottom: 65%;
+    bottom: 70%;
     left: 50%;
     max-width: 100px;
     opacity: 1;
@@ -310,10 +315,10 @@ html {
     transform: translate(-50%, 0%);
   }
   .profile-card-1 h2 {
-    margin: -22%;
+    margin: -25%;
     font-weight: 600;
     font-size:25px;
-    padding-bottom: 65px;
+    padding-bottom: 80px;
   }
   /* .profile-card-1 h2 small {
     display: block;
