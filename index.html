@@ -1,193 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Better Nutrient</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
     <link rel="icon" type="image/png" sizes="64x64" href="./images/icons8-restaurant-64.png" />
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <a class="navbar-brand" href="#">Better Nutrient</a>
 
-  <!-- Navbar -->
-  <header>
-
-    <a class="navbar-brand" href="#">Better Nutrient</a>
-  
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-   
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#search">Search</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#search">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <section class="home" id="home">
+      <div
+        class="content col-span-4 p-8 md:px-4 md:py-8 lg:py-12 lg:px-8 bg-gray-200 text-center">
+        <h3 class="brand-title">
+          <span>Better Nutrient</span>
+        </h3>
+        <br />
+        <h4 class="h4-text">Where healthy eating meets delicious taste.</h4>
+        <p class="p-text">
+          Healthy eating made simple. Explore our collection of healthy and
+          tasty recipes, each of which is accompanied by a full breakdown of its
+          nutritional value to help you discover a healthier, tastier way of
+          eating. <br /><br />
+          <span
+            >"Let food be thy medicine and medicine be thy food." -
+            Hippocrates</span
+          >
+        </p>
       </div>
-    </nav>
-  </header>
-<br>
-  <section class="home" id="home">
-    <div class="content col-span-4 p-8 md:px-4 md:py-8 lg:py-12 lg:px-8 bg-gray-200 text-center">
-<h3 class="sm:mt-6 md:mt-0 lg:mt-6 mb-6 lg:mb-12 flex flex-col justify-center text-black text-base font-arvo uppercase tracking-widest">
-  <span>Better Nutrient</span></h3>
-  <br>
-  <h4>Where healthy eating meets delicious taste.</h4>
-  <p class="mb-8 md:mb-4 lg:mb-8 lg:px-8 leading-loose md:leading-snug lg:leading-loose">Healthy eating made simple. Explore our collection of healthy and tasty recipes,
-    each of which is accompanied by a full breakdown of its nutritional value to help you discover a healthier, tastier way of eating.
-    <br><br>
-    "Let food be thy medicine and medicine be thy food." - Hippocrates</p>
-    </div>
-  
-    <div class="image"> <img src="./images/AdobeStock_529951921-overlay(2).png" alt=""></div>
-  </section>
-  <br>
 
-  
+      <div class="image"><img src="./images/heroImg.png" alt="" /></div>
+    </section>
+    <br />
 
     <div class="search">
-        <div class="card" id="section1">
-            <div class="card-body" id="quote">
-                People who love to eat are always the best people.
-            </div>
-            <form id="search-form" class="form" id="form">
-                <div class="form-inline form-group">
-                    <div class="input-group">
-                        <input class="form-input " type="text" id="search-input" placeholder="Food Name">
-                        <div class="input-group-append" id="groupId">
-                            <button type="submit" class="btn search-button" id="search-button"
-                                aria-label="submit search">
-                                Search
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </form>
+      <div class="card" id="section1">
+        <div class="card-body" id="quote">
+          People who love to eat are always the best people.
         </div>
-        <div class="database">
-            <div class="nutrient">
-            <div class="card" style="width: 18rem;" id="output">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
+        <form id="search-form" class="form" id="form">
+          <div class="form-inline form-group">
+            <div class="input-group">
+              <input
+                class="form-input"
+                type="text"
+                id="search-input"
+                placeholder="Food Name" />
+              <div class="input-group-append" id="groupId">
+                <button
+                  type="submit"
+                  class="btn search-button"
+                  id="search-button"
+                  aria-label="submit search">
+                  Search
+                </button>
+              </div>
             </div>
+          </div>
+        </form>
+      </div>
+      <div class="database">
+        <div class="nutrient">
+          <div class="card" style="width: 18rem" id="output">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
             </div>
-
-
-            <div class="recipe">
-            <div class="card" style="width: 18rem;" id="display">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;" id="display">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;" id="display">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;" id="display">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;" id="display">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;" id="display">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+          </div>
         </div>
 
-
-
+        <div class="recipe">
+          <div class="card" style="width: 18rem" id="display">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem" id="display">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem" id="display">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem" id="display">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem" id="display">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem" id="display">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <footer class="footer">
-        <div class="footer__addr">
-          <h1 class="footer__logo">Group 23</h1>
-          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.pinterest.co.uk/"><i class="fa-brands fa-pinterest"></i></a>
-          
-          <address>
-                
-            <a class="footer__btn" href="mailto:example@gmail.com">Contact Us</a>
-          </address>
-        </div>
-        
-        <ul class="footer__nav">
-          <li class="nav__item">
-            <h2 class="nav__title">Github</h2>
-      
-            <ul class="nav__ul">
-              <li>
-                <a href="https://github.com/preshy59"><i class="fa-brands fa-github"></i> 
-                    Ebele Precious Okemba</a>
-              </li>
-      
-              <li>
-                <a href="https://github.com/KingJessie"><i class="fa-brands fa-github"></i> King Jessie</a>
-              </li>
-                  
-              <li>
-                <a href="https://github.com/Sophie-Senge"><i class="fa-brands fa-github"></i> Sophie Perks</a>
-              </li>
-            </ul>
-          </li>
-          
-          <!-- <li class="nav__item nav__item--extra">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Group 23</h1>
+        <a href="https://www.instagram.com/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://twitter.com/?lang=en"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.pinterest.co.uk/"
+          ><i class="fa-brands fa-pinterest"></i
+        ></a>
+
+        <address>
+          <a class="footer__btn" href="mailto:example@gmail.com">Contact Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Github</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="https://github.com/preshy59"
+                ><i class="fa-brands fa-github"></i> Ebele Precious Okemba</a
+              >
+            </li>
+
+            <li>
+              <a href="https://github.com/KingJessie"
+                ><i class="fa-brands fa-github"></i> King Jessie</a
+              >
+            </li>
+
+            <li>
+              <a href="https://github.com/Sophie-Senge"
+                ><i class="fa-brands fa-github"></i> Sophie Perks</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <!-- <li class="nav__item nav__item--extra">
             <h2 class="nav__title">Github</h2>
             
             <ul class="nav__ul nav__ul--extra">
@@ -216,38 +244,39 @@
               </li>
             </ul>
           </li> -->
-          
-          <li class="nav__item">
-            <h2 class="nav__title">Site Navigation</h2>
-            
-            <ul class="nav__ul">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              
-              <li>
-                <a href="#">Search Food</a>
-              </li>
-              
-              <li>
-                <a href="#">About</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        
-        <div class="legal">
-          <p>&copy; 2023 Group 23. All rights reserved.</p>
-          
-          <div class="legal__links">
-            <span>Made with <span class="heart">♥</span> by Group 23</span>
-          </div>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Site Navigation</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Home</a>
+            </li>
+
+            <li>
+              <a href="#">Search Food</a>
+            </li>
+
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2023 Group 23. All rights reserved.</p>
+
+        <div class="legal__links">
+          <span>Made with <span class="heart">♥</span> by Group 23</span>
         </div>
-      </footer>
-      <script src="https://kit.fontawesome.com/036f00d82e.js" crossorigin="anonymous"></script>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/036f00d82e.js"
+      crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
