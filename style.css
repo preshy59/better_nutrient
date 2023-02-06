@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Philosopher&family=Poppins:wght@300;500;700&display=swap');
 body,
 html {
   width: 100%;
@@ -8,36 +9,27 @@ html {
 }
 
 header{
-
   position: fixed;
   top:0; left: 0; right:0;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background:#78C7D8ff;
+  background:rgb(255, 255, 255);
   padding:0.5rem 4%;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 
-}
-
-
-header .logo{
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color:#666;
-}
-
-header .logo i{
-  padding-right: .5rem;
-  color:rgb(197, 27, 27);
 }
 
 .navbar-brand {
   font-size: 0.9.5rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 700 !important;
+  background: -webkit-linear-gradient(right,#55c9ef, #00b84a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar-nav {
@@ -48,7 +40,7 @@ header .logo i{
 .nav-item {
   margin: 0px 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 700 !important;
   letter-spacing: 0.1rem;
   font-size: 0.9rem;
 }
@@ -60,40 +52,56 @@ header .logo i{
 .home{
   display: flex;
   flex-wrap: wrap;
-  gap:1.5rem;
-  min-height: 100vh;
   align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(./images/AdobeStock_313609653.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 25px);
+
 }
 
 .home .content{
   flex:1 1 40rem;
-  padding-top: 6.5rem;
+  padding-top: 1.5rem;
   padding-left: 25px;
 }
 
 .home .content h3{
+  font-family:'Philosopher', sans-serif;
   font-size: 4.5rem;
-  font-weight: 560 ;
-    background: -webkit-linear-gradient(right,#55c9ef, #E8803Fff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 55px;
-  color:#333;
+  font-weight: 700 ;
+  color: #000;
+  line-height: 60px;
 }
 
+.h4-text{
+  font-family:'Philosopher', sans-serif;
+  font-weight: 500;
+ color: #666;
+
+}
 .home .content p{
-  font-size: 1.7rem;
-  color:#666;
+  font-family:'Philosopher', sans-serif;
+  font-size: 1.4rem;
+  color:black;
   padding:1rem 0;
 }
 
+.p-text span{
+  color: rgb(87, 84, 84);
+  text-shadow: 0 0 0.2em #97f899;
+  -webkit-text-stroke-color: rgb(87, 84, 84);
+  -webkit-text-stroke-width: 0.02em;
+}
+
+
 .home .image{
   flex:1 1 40rem;
+  padding-left: 25px;
 }
 
 .home .image img{
-  width:110%;
+  width:85%;
   
   animation:float 3s linear infinite;
 }
@@ -103,7 +111,7 @@ header .logo i{
     transform: translateY(0rem);
   }
   50%{
-    transform: translateY(3rem);
+    transform: translateY(2.5rem);
   }
 }
 
