@@ -54,7 +54,7 @@ function recipeCards(data) {
     let urlButton = data.hits[i].recipe.url;
     // console.log(data.hits[0].recipe.url)
 
-    let recipeCard = `<div class="card" style="width: 20rem;">
+    let recipeCard = `<div class="card" id="recipe-card" style="width: 20rem;">
   <img class="card-img-top" src=${recipeImg} alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">${recipeTitle}</h5>
@@ -64,7 +64,7 @@ function recipeCards(data) {
     <li class="list-group-item">${ingredientThree}</li>
     <li class="list-group-item">${ingredientFour}</li>
     <li class="list-group-item">${ingredientFive}</li> 
-    <a href=${urlButton} class="btn btn-primary">go to recipe!</a>
+    <a href=${urlButton} class="btn btn-primary" id="recipeBtn">go to recipe!</a>
   </div>
 </div>`
 
