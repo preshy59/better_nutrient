@@ -144,6 +144,7 @@ html {
   
   .footer {
     display: flex;
+    flex-direction: row;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #2f2f2f;
@@ -160,6 +161,7 @@ html {
     margin-right: 2em;
     margin-bottom: 2em;
     margin-left: 2em;
+    max-width: 200px;
   }
   
   .footer__logo {
@@ -266,11 +268,14 @@ html {
   
   @media screen and (min-width: 24.375em) {
     .legal .legal__links {
-      margin-left: auto;
+      margin-left: auto!important;
     }
   }
   
   @media screen and (min-width: 40.375em) {
+    /* .footer > * {
+        flex: 1 100%;
+    } */
     .footer__nav > * {
       flex: 1;
     }
@@ -282,7 +287,7 @@ html {
     }
     
     .footer__nav {
-      flex: 2 0px;
+      flex: 3 0px;
     }
   }
   /* ----------------------- */
@@ -301,10 +306,11 @@ html {
     width: 100%;
     color: #ffffff;
     text-align: center;
-    height:368px!important;
+    min-height:370px!important;
     border:none;
     margin-bottom: 1rem;
   }
+
   .profile-card-1 .background {
     width:100%;
     vertical-align: top;
@@ -315,7 +321,7 @@ html {
     transform: scale(2.8);
   }
   .profile-card-1 .card-content {
-    width: 100%;
+    /* width: 100%; */
     padding: 15px 25px;
     position: absolute;
     left: 0;
@@ -338,28 +344,24 @@ html {
     font-weight: 600;
     font-size:25px;
     padding-bottom: 80px;
-    color:#219ebc;
+    color: whitesmoke;
   }
-  /* .profile-card-1 h2 small {
-    display: block;
-    font-size: 15px;
-    margin-top: 0;
-  } */
+
   .profile-card-1 p{
     margin: 5px;
    display: block;
   }
   .profile-card-1 i {
     display: inline-block;
-      font-size: 16px;
-      color: #219ebc;
+      font-size: 30px;
+      color: white;
       text-align: center;
-      border: 1px solid #219ebc;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
+      border: 1px solid white;
+      width: 40px;
+      height: 40px;
+      line-height: 38px;
       border-radius: 50%;
-      margin:0 5px;
+      margin:0 auto;
   }
   .profile-card-1 .icon-block{
       float:left;
