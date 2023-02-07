@@ -48,5 +48,46 @@ function exploreNutrientSearch(choiceofFood) {
     }
 
     
+//function that display the nutrient as obtain from the URL based on user input-EO
+function nutrientDetails(foodDetails) {
+   
+    // storing the details obtained the API in a variable-EO
+    var productName = foodDetails.name
+    var totalCalories = foodDetails.calories;
+    var carbs = foodDetails.carbohydrates_total_g;
+    var chole = foodDetails.cholesterol_mg;
+    var fatSat = foodDetails.fat_saturated_g;
+    var totalFat =foodDetails.fat_total_g;
+    var fiber =foodDetails.fiber_g;
+    var potassium =foodDetails.potassium_mg;
+    var protein =foodDetails.protein_g;
+    var size =foodDetails.serving_size_g;
+    var soduim =foodDetails.sodium_mg;
+    var sugar =foodDetails.sugar_g;
+
+   
+    console.log(productName);
+    // insert the variable within the div and appends it to the nutrient-EO
+    nutrientData.innerHTML += ` <div class="card" style="width: 18rem;" id="list-of-forecast">
+        <div class="card-body">
+        <h1> Name: ${productName}</h1>
+            <p>Calories: ${totalCalories} </p>
+            <p>Carbohydrate: ${carbs}g</p>
+            <p>Cholesterol: ${chole}mg</p>
+            <p>Fat_saturated: ${fatSat}g</p>
+            <p>Fat_Total: ${totalFat}g</p>
+            <p>Fiber: ${fiber}g</p>
+            p>Protein: ${protein}g</p>
+            <pServing_Size: ${size}g</p>
+            <p>Soduim: ${soduim}mg</p>
+            <p>Potassium: ${potassium}mg</p>
+            <p>Sugar: ${sugar}g</p>
+            </div>
+        </div>`
+   
+        displayNutrient.append(nutrientData);
+}
+
+
   });
   
