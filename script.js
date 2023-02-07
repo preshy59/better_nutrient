@@ -64,11 +64,11 @@ function recipeCards(data) {
     let recipeImg = data.hits[i].recipe.image
     // console.log(data.hits[0].recipe.image)
     // ingredients
-    // let ingredientOne = data.hits[i].recipe.ingredients[0].text;
-    // let ingredientTwo = data.hits[i].recipe.ingredients[1].text;
-    // let ingredientThree = data.hits[i].recipe.ingredients[2].text;
-    // let ingredientFour = data.hits[i].recipe.ingredients[3].text;
-    // let ingredientFive = data.hits[i].recipe.ingredients[4].text;
+    let ingredientOne = data.hits[i].recipe.ingredientLines[0];
+    let ingredientTwo = data.hits[i].recipe.ingredientLines[1];
+    let ingredientThree = data.hits[i].recipe.ingredientLines[2];
+    let ingredientFour = data.hits[i].recipe.ingredientLines[3];
+    let ingredientFive = data.hits[i].recipe.ingredientLines[4];
     // console.log(data.hits[0].recipe.ingredients[0].text)
     // console.log(data.hits[0].recipe.ingredients[1].text)
     // console.log(data.hits[0].recipe.ingredients[2].text)
@@ -82,12 +82,17 @@ function recipeCards(data) {
   <img class="card-img-top" src=${recipeImg} alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">${recipeTitle}</h5>
-    
+    <p>Ingredients:</p>
+    <li class="list-group-item">${ingredientOne}</li>
+    <li class="list-group-item">${ingredientTwo}</li>
+    <li class="list-group-item">${ingredientThree}</li>
+    <li class="list-group-item">${ingredientFour}</li>
+    <li class="list-group-item">${ingredientFive}</li> 
     <a href=${urlButton} class="btn btn-primary">Recipe!</a>
   </div>
 </div>`
 
-    recipeEl.innerHTML = recipeCard;
+    recipeEl.innerHTML += recipeCard;
 
 
   }
