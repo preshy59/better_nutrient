@@ -200,23 +200,19 @@ width:11%;
 .nutrient{
     display: flex;
     flex-direction: column;
-   
-   }
-
-#output{
     margin: auto;
     width: 100%;
-}
+   
+   }
 
 .recipe{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-#display{
     margin: 20px;
 }
+
+
 
 
 /* footer css--------------- */
