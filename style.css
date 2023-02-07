@@ -473,3 +473,29 @@ width:11%;
     color:#2E3434;
     text-decoration:none;
   }
+
+  /* --------recipe cards-------- */
+#recipe-card{
+padding-top: 20px;
+margin-bottom: 30px;
+
+}
+  #rec-display li{
+    color: #444;
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    list-style-type: none;
+  }
+  #recipeBtn{
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    background: #7cd5f3;
+    color: whitesmoke;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
