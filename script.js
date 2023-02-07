@@ -108,3 +108,42 @@ function exploreNutrientSearch(choiceofFood) {
         
         });
     }
+
+    //function that display the nutrient as obtain from the URL based on user input
+    function nutrientDetails(foodDetails) {
+        nutrientData.innerHTML ="";
+
+        let productName = foodDetails.name
+        let totalCalories = foodDetails.calories;
+        let carbs = foodDetails.carbohydrates_total_g;
+        let chole = foodDetails.cholesterol_mg;
+        let fatSat = foodDetails.fat_saturated_g;
+        let totalFat =foodDetails.fat_total_g;
+        let fiber =foodDetails.fiber_g;
+        let potassium =foodDetails.potassium_mg;
+        let protein =foodDetails.protein_g;
+        let size =foodDetails.serving_size_g;
+        let soduim =foodDetails.sodium_mg;
+        let sugar =foodDetails.sugar_g;
+    
+       
+        console.log(productName);
+        nutrientData.innerHTML = ` <div class="card" style="width: 18rem;" id="list-of-forecast">
+            <div class="card-body">
+            <h1> Name: ${productName}</h1>
+                <p>Calories: ${totalCalories} </p>
+                <p>Carbohydrate: ${carbs}g</p>
+                <p>Cholesterol: ${chole}mg</p>
+                <p>Fat_saturated: ${fatSat}g</p>
+                <p>Fat_Total: ${totalFat}g</p>
+                <p>Fiber: ${fiber}g</p>
+                p>Protein: ${protein}g</p>
+                <pServing_Size: ${size}g</p>
+                <p>Soduim: ${soduim}mg</p>
+                <p>Potassium: ${potassium}mg</p>
+                <p>Sugar: ${sugar}g</p>
+                </div>
+            </div>`
+        displayNutrient.append(nutrientData);
+
+    }
