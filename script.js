@@ -15,6 +15,7 @@ $(document).ready(function () {
     $("#search-input").val("");
 
     fetchRecipe(userInput);
+    exploreNutrientSearch(userInput);
 
     // URL for making a fetch request to the Edamam API to search for a recipe based on the user's input. - JK
     // let queryURL =
@@ -86,3 +87,24 @@ function fetchRecipe(foodItem) {
       recipeCards(data)
     })
 }
+
+
+// function to obtain data from the ninjas API
+function exploreNutrientSearch(choiceofFood) {
+
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '565b910ef1msh5378420bcc0f262p1a4229jsnb6c6b7e6740d',
+            'X-RapidAPI-Host': 'nutrition-by-api-ninjas.p.rapidapi.com'
+        }
+    };
+    
+    fetch(`https://nutrition-by-api-ninjas.p.rapidapi.com/v1/nutrition?query=${choiceofFood}`, options)
+        .then(response => response.json())
+        .then((deatils) => {
+         console.log(deatils);
+         nutrientDetails(deatils);
+        
+        });
+    }
