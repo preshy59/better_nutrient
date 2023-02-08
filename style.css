@@ -413,13 +413,24 @@ width:11%;
 
 
   }
+
+  #team-title h2{
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 500;
+    color: #666;
+    font-size: 40px;
+
+  }
+  #team-title{
+   padding: 40px;
+  }
   .profile-card-1 {
     font-family: acumin-pro, system-ui, sans-serif;
     position: relative;
     float: left;
     overflow: hidden;
     width: 100%;
-    color: #ffffff;
+    color: rgb(56, 55, 55);
     text-align: center;
     min-height:370px!important;
     border:none;
@@ -459,7 +470,7 @@ width:11%;
     font-weight: 600;
     font-size:25px;
     padding-bottom: 80px;
-    color: whitesmoke;
+    color: rgb(56, 55, 55);
   }
 
   .profile-card-1 p{
@@ -469,7 +480,7 @@ width:11%;
   .profile-card-1 i {
     display: inline-block;
       font-size: 30px;
-      color: white;
+      color: rgb(56, 55, 55);
       text-align: center;
       border: 1px solid white;
       width: 40px;
