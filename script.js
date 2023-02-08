@@ -69,7 +69,7 @@ function recipeCards(data) {
     <li class="list-group-item">${ingredientThree}</li>
     <li class="list-group-item">${ingredientFour}</li>
     <li class="list-group-item">${ingredientFive}</li> 
-    <a href=${urlButton} class="btn btn-primary" id="recipeBtn">go to recipe!</a>
+    <a href=${urlButton} class="btn btn-primary" id="recipeBtn">Get full recipe!</a>
   </div>
 </div>`
 
