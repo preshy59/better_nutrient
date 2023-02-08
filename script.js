@@ -134,7 +134,7 @@ function exploreNutrientSearch(choiceofFood) {
         console.log(productName);
         nutrientData.innerHTML = ` <div class="card" style="width: 18rem;" id="list-of-forecast">
             <div class="card-body">
-            <h1> Name: ${productName}</h1>
+            <h1> Basic Nutrient of ${productName}</h1>
                 <p>Calories: ${totalCalories} </p>
                 <p>Carbohydrate: ${carbs}g</p>
                 <p>Cholesterol: ${chole}mg</p>
