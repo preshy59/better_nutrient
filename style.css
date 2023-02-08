@@ -280,8 +280,7 @@ width:11%;
     font-family: 'Pacifico', cursive;
     font-weight: 400;
     font-size: 1.5rem;
-    color:  #219ebc;
-    /* margin-left: 10px; */
+    margin-left: 10px;
     padding-bottom: 10px;
   }
   
@@ -290,7 +289,7 @@ width:11%;
     color:  #219ebc;
     font-weight: 400;
     font-size: 15px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
   
   .footer address {
@@ -328,6 +327,7 @@ width:11%;
     text-decoration: none;
     color:  #219ebc;
     padding: 10px;
+    line-height: 2em;
   }
   
   .footer__nav {
@@ -425,7 +425,7 @@ width:11%;
    padding: 40px;
   }
   .profile-card-1 {
-    font-family: acumin-pro, system-ui, sans-serif;
+    font-family: 'Philosopher', sans-serif;
     position: relative;
     float: left;
     overflow: hidden;
