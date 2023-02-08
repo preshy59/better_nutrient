@@ -1,9 +1,13 @@
 let recipeEl = document.querySelector("#rec-display");
+let nutrientData = document.querySelector(".nutrient");
+let displayNutrient = document.querySelector("#nut-display");
+
 
 $(document).ready(function () {
   // Variable to retrieve HTML elements using their ID's - JK
   var searchButton = document.getElementById("search-button");
   var userInput = document.getElementById("search-input");
+ 
 
   // Event listener to "searchButton" HTML element when the button is clicked - JK
   searchButton.addEventListener("click", function (event) {
@@ -89,7 +93,7 @@ function fetchRecipe(foodItem) {
 }
 
 
-// function to obtain data from the ninjas API
+// function to obtain data from the ninjas API-EO
 function exploreNutrientSearch(choiceofFood) {
 
     const options = {
@@ -109,22 +113,22 @@ function exploreNutrientSearch(choiceofFood) {
         });
     }
 
-    //function that display the nutrient as obtain from the URL based on user input
+    //function that display the nutrient as obtain from the URL based on user input-EO
     function nutrientDetails(foodDetails) {
         nutrientData.innerHTML ="";
 
-        let productName = foodDetails.name
-        let totalCalories = foodDetails.calories;
-        let carbs = foodDetails.carbohydrates_total_g;
-        let chole = foodDetails.cholesterol_mg;
-        let fatSat = foodDetails.fat_saturated_g;
-        let totalFat =foodDetails.fat_total_g;
-        let fiber =foodDetails.fiber_g;
-        let potassium =foodDetails.potassium_mg;
-        let protein =foodDetails.protein_g;
-        let size =foodDetails.serving_size_g;
-        let soduim =foodDetails.sodium_mg;
-        let sugar =foodDetails.sugar_g;
+        let productName = foodDetails[0].name
+        let totalCalories = foodDetails[0].calories;
+        let carbs = foodDetails[0].carbohydrates_total_g;
+        let chole = foodDetails[0].cholesterol_mg;
+        let fatSat = foodDetails[0].fat_saturated_g;
+        let totalFat =foodDetails[0].fat_total_g;
+        let fiber =foodDetails[0].fiber_g;
+        let potassium =foodDetails[0].potassium_mg;
+        let protein =foodDetails[0].protein_g;
+        let size =foodDetails[0].serving_size_g;
+        let soduim =foodDetails[0].sodium_mg;
+        let sugar =foodDetails[0].sugar_g;
     
        
         console.log(productName);
@@ -137,7 +141,7 @@ function exploreNutrientSearch(choiceofFood) {
                 <p>Fat_saturated: ${fatSat}g</p>
                 <p>Fat_Total: ${totalFat}g</p>
                 <p>Fiber: ${fiber}g</p>
-                p>Protein: ${protein}g</p>
+                <p>Protein: ${protein}g</p>
                 <pServing_Size: ${size}g</p>
                 <p>Soduim: ${soduim}mg</p>
                 <p>Potassium: ${potassium}mg</p>
