@@ -136,7 +136,7 @@ width:11%;
   }
 }
 
-
+/* search section css */
 #quote{
     color: #1a6c51;
     text-align: center;
@@ -167,10 +167,11 @@ width:11%;
     margin: 0 30%;
     height: 80px;
     background-color: #f0f8ff;
-    border: 2px solid black;
+    border: 2px solid #1a6c51;
     border-radius: 60px;
     color: black;
     padding: 0 10px;
+    
     
 }
 
@@ -200,22 +201,33 @@ width:11%;
 .nutrient{
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: 100%;
+   
    
    }
+   #list-of-forecast{
+    /* margin: auto; */
+    width: auto !important;
+    align-items: center;
+    color: #1a6c51;
+    border: #1a6c51;
+    
+   }
 
+   #list-of-forecast h1{
+    text-transform: uppercase;
+   }
+
+   #list-of-forecast p{
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+   }
 .recipe{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px;
 }
-
-
-
-
-/* footer css--------------- */
 
 
 /* footer css--------------- */
