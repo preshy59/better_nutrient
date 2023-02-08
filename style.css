@@ -428,7 +428,7 @@ width:11%;
     font-family: 'Philosopher', sans-serif;
     position: relative;
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
     color: rgb(56, 55, 55);
     text-align: center;
@@ -437,7 +437,7 @@ width:11%;
     margin-bottom: 1rem;
   }
 
-  .profile-card-1 .background {
+  /* .profile-card-1 .background {
     width:100%;
     vertical-align: top;
     opacity: 0.9;
@@ -445,7 +445,7 @@ width:11%;
     filter: blur(5px);
      -webkit-transform: scale(1.8);
     transform: scale(2.8);
-  }
+  } */
   .profile-card-1 .card-content {
     /* width: 100%; */
     padding: 15px 25px;
