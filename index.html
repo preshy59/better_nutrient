@@ -2,226 +2,203 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Better Nutrient</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
-  <link rel="icon" type="image/png" sizes="64x64" href="./images/icons8-dining-room-40.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Nutrient</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./images/icons8-dining-room-40.png" />
 </head>
 
 <body>
-  <!-- Navbar -->
-  <header>
-    <a class="navbar-brand" href="#">Better Nutrient <img src="./images/logo (1).jpg" alt="Logo"></a>
-
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#search">Search</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <br />
-  <section class="home" id="home">
-    <div class="content col-span-4 p-8 md:px-4 md:py-8 lg:py-12 lg:px-8 bg-gray-200 text-center">
-      <h3 class="brand-title">
-        <span>Better Nutrient</span>
-      </h3>
-      <br />
-      <h4 class="h4-text">Where healthy eating meets delicious taste.</h4>
-      <p class="p-text">
-        Healthy eating made simple. Explore our collection of healthy and
-        tasty recipes, each of which is accompanied by a full breakdown of its
-        nutritional value to help you discover a healthier, tastier way of
-        eating. <br /><br />
-        <span>"Let food be thy medicine and medicine be thy food." -
-          Hippocrates</span>
-      </p>
-
-      <img class="pic1" src="./images/icons8-chef-64.png" alt="Female chef">
-      <img class="pic2" src="./images/icons8-eco-food-64.png" alt="Salad dish with fork and knife on the side">
-      <img class="pic3" src="./images/icons8-diet-food-66.png" alt="Clipboard with a pear on the side">
-    </div>
-
-    <!-- Search section -->
-
-    <div class="image"><img src="./images/heroImg.png" alt="Healthy dishes" /></div>
-
-  </section>
-  <br />
-
-  <div class="search" id="search">
-    <div class="card" id="section1">
-      <div class="card-body" id="quote">
-        A HEALTHY OUTSIDE STARTS FROM THE INSIDE
-      </div>
-      <form id="search-form" class="form" id="form">
-        <div class="form-inline form-group">
-          <div class="input-group">
-            <input class="form-input" type="text" id="search-input" placeholder="Food Name" />
-            <div class="input-group-append" id="groupId">
-              <button type="submit" class="btn search-button" id="search-button" aria-label="submit search">
-                Search
-              </button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="database">
-      <section id="nut-display" class="mt-3" role="region" aria-live="polite">
-        <div class="nutrient">
-
-        </div>
-      </section>
-      <section id="rec-display" class="row justify-content-between mt-3" role="region" aria-live="polite">
-      
-      </section>
-    </div>
-  </div>
-
-   <!-- Team section -->
-
-   <section id="team-cards">
-    <div class="content col-span-4 p-8 md:px-4 md:py-8 lg:py-12 lg:px-8 bg-gray-200 text-center" id="team-title">
-        <h2>The Team</h2>
-    </div>
-    
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4">
-                <div class="card profile-card-1">
-                    <!-- <img src="https://images.pexels.com/photos/1200225/pexels-photo-1200225.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="profile-sample1" class="background" /> -->
-                    <img src="./images/Precious.jpeg" alt="profile-image"
-                        class="profile" />
-                    <div class="card-content">
-                        <h2>Ebele Okemba</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum quia perspiciatis animi corrupti sint modi labore, odio asperiores aperiam eius veritatis. Nesciunt distinctio nam quidem, dolore eveniet porro odio.</p>
-                            <div class="icon-block"><a href="https://github.com/preshy59"><i class="fa-brands fa-github"></i></a>
-                                <!-- <a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i
-                                        class="fa fa-google-plus"></i></a> -->
-                            </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-md-4">
-                <div class="card profile-card-1">
-                    <!-- <img src="https://images.pexels.com/photos/1200225/pexels-photo-1200225.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="profile-sample1" class="background" /> -->
-                    <img src="./images/King Jessie.jpeg" alt="profile-image"
-                        class="profile" />
-                    <div class="card-content">
-                        <h2>King Jessie</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum quia perspiciatis animi corrupti sint modi labore, odio asperiores aperiam eius veritatis. Nesciunt distinctio nam quidem, dolore eveniet porro odio.</p>
-                            <div class="icon-block"><a href="https://github.com/KingJessie"><i class="fa-brands fa-github"></i></a>
-                                <!-- <a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i
-                                        class="fa fa-google-plus"></i></a> -->
-                            </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="col-md-4">
-                <div class="card profile-card-1">
-                    <!-- <img src="https://images.pexels.com/photos/1200225/pexels-photo-1200225.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="profile-sample1" class="background" /> -->
-                    <img src="./images/Sophie.jpeg" alt="profile-image"
-                        class="profile" />
-                    <div class="card-content">
-                        <h2>Sophie Perks</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic illum quia perspiciatis animi corrupti sint modi labore, odio asperiores aperiam eius veritatis. Nesciunt distinctio nam quidem, dolore eveniet porro odio.</p>
-                            <div class="icon-block"><a href="https://github.com/Sophie-Senge"><i class="fa-brands fa-github"></i></a>
-                                <!-- <a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i
-                                        class="fa fa-google-plus"></i></a> -->
-                            </div>
-                    </div>
-                </div>
-                
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-   <!---------------- footer ---------------->
-   <footer class="footer">
-    <div class="footer__addr">
+    <!-- Navbar -->
+    <header>
         <a class="navbar-brand" href="#">Better Nutrient <img src="./images/logo (1).jpg" alt="Logo"></a>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.pinterest.co.uk/"><i class="fa-brands fa-pinterest"></i></a>
 
-        <address>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#search">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br />
+    <section class="home" id="home">
+        <div class="content col-span-4 p-8 md:px-4 md:py-8 lg:py-12 lg:px-8 bg-gray-200 text-center">
+            <h3 class="brand-title">
+                <span>Better Nutrient</span>
+            </h3>
+            <br />
+            <h4 class="h4-text">Where healthy eating meets delicious taste.</h4>
+            <p class="p-text">
+                Healthy eating made simple. Explore our collection of healthy and
+                tasty recipes, each of which is accompanied by a full breakdown of its
+                nutritional value to help you discover a healthier, tastier way of
+                eating. <br /><br />
+                <span>"Let food be thy medicine and medicine be thy food." -
+                    Hippocrates</span>
+            </p>
 
-            <a class="footer__btn" href="mailto:example@gmail.com">Contact Us</a>
-        </address>
-    </div>
+            <img class="pic1" src="./images/icons8-chef-64.png" alt="Female chef">
+            <img class="pic2" src="./images/icons8-eco-food-64.png" alt="Salad dish with fork and knife on the side">
+            <img class="pic3" src="./images/icons8-diet-food-66.png" alt="Clipboard with a pear on the side">
+        </div>
 
-    <div class="short_about">
-        <h2 class="nav__title">About Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla saepe harum ut, assumenda nam animi debitis fugiat quam expedita quas! Pariatur perferendis cumque repellendus adipisci saepe. Est voluptates tenetur corporis!</p>
-    </div>
+        <!-- Search section -->
 
-    
+        <div class="image"><img src="./images/heroImg.png" alt="Healthy dishes" /></div>
 
-    <ul class="footer__nav">
-        
-        
-        
-       
+    </section>
+    <br />
 
-        <li class="nav__item">
-            <h2 class="nav__title">Site Navigation</h2>
+    <div class="search" id="search">
+        <div class="card" id="section1">
+            <div class="card-body" id="quote">
+                A HEALTHY OUTSIDE STARTS FROM THE INSIDE
+            </div>
+            <form id="search-form" class="form" id="form">
+                <div class="form-inline form-group">
+                    <div class="input-group">
+                        <input class="form-input" type="text" id="search-input" placeholder="Food Name" />
+                        <div class="input-group-append" id="groupId">
+                            <button type="submit" class="btn search-button" id="search-button"
+                                aria-label="submit search">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="database">
+            <section id="nut-display" class="mt-3" role="region" aria-live="polite">
+                <div class="nutrient">
 
-            <ul class="nav__ul">
-                <li>
-                    <a href="#navbarNav">Home</a>
-                </li>
+                </div>
+            </section>
+            <section id="rec-display" class="row justify-content-between mt-3" role="region" aria-live="polite">
 
-                <li>
-                    <a href="#search-button">Search Food</a>
-                </li>
-
-                <li>
-                    <a href="#team-cards">Team</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-
-    <div class="legal">
-        <p>&copy; 2023 Group 23. All rights reserved.</p>
-
-        <div class="legal__links">
-            <span>Made with <span class="heart">♥</span> by Group 23</span>
+            </section>
         </div>
     </div>
-</footer>
-  <script src="https://kit.fontawesome.com/036f00d82e.js" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./script.js"></script>
-  <script src="./darkmode.js"></script>
+    <!-- Team section -->
+
+    <section id="team-cards">
+        <div class="content col-span-4 p-8 md:px-4 md:py-8 lg:py-12 lg:px-8 bg-gray-200 text-center" id="team-title">
+            <h2>The Team</h2>
+        </div>
+        <div class="container team-cards d-flex justify-content-center">
+            <div class="row">
+                <div class="card-body card col mx-3 d-flex justify-content-center text-center" style="max-width: 20rem;">
+                    <img src="./images/Precious.jpeg" class="profile-photo" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ebele Okemba</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui consectetur veritatis, iusto fugit minus, ipsam corporis dolorem molestiae in a iste, deleniti incidunt rerum enim. Dignissimos ab quam veniam cumque.</p>
+                            <a href="https://github.com/preshy59"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card-body card col mx-3 d-flex justify-content-center text-center" style="max-width: 20rem;">
+                    <img src="./images/King Jessie.jpeg" class="profile-photo" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">King Jessie</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quos nobis totam alias corporis repellat neque ipsum aspernatur at animi illo ab, odio, similique aliquam dolorem odit, placeat mollitia veritatis?</p>
+                            <a href="https://github.com/KingJessie"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card-body card col mx-3 d-flex justify-content-center text-center" style="max-width: 20rem;">
+                    <img src="./images/Sophie.jpeg" class="profile-photo" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sophie Perks</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur praesentium voluptatum suscipit dolor. Doloremque ad cum, fugiat sunt sapiente quis id. Beatae illum nobis alias, ipsam quia ut deleniti.</p>
+                            <a href="https://github.com/Sophie-Senge"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <!---------------- footer ---------------->
+    <footer class="footer">
+        <div class="footer__addr">
+            <a class="navbar-brand" href="#">Better Nutrient <img src="./images/logo (1).jpg" alt="Logo"></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.pinterest.co.uk/"><i class="fa-brands fa-pinterest"></i></a>
+
+            <address>
+
+                <a class="footer__btn" href="mailto:example@gmail.com">Contact Us</a>
+            </address>
+        </div>
+
+        <div class="short_about">
+            <h2 class="nav__title">About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla saepe harum ut, assumenda nam animi
+                debitis fugiat quam expedita quas! Pariatur perferendis cumque repellendus adipisci saepe. Est
+                voluptates tenetur corporis!</p>
+        </div>
+
+
+
+        <ul class="footer__nav">
+
+
+
+
+
+            <li class="nav__item">
+                <h2 class="nav__title">Site Navigation</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#navbarNav">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#search-button">Search Food</a>
+                    </li>
+
+                    <li>
+                        <a href="#team-cards">Team</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2023 Group 23. All rights reserved.</p>
+
+            <div class="legal__links">
+                <span>Made with <span class="heart">♥</span> by Group 23</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/036f00d82e.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./darkmode.js"></script>
 </body>
 
 </html>

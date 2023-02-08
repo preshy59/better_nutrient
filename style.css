@@ -294,7 +294,7 @@ width:11%;
   
   .footer address {
     font-style: normal;
-    color: #999;
+    color: #2f2f2f;
     padding-left: 5px;
     padding-top: 5px;
   }
@@ -342,11 +342,11 @@ width:11%;
   }
   
   .nav__ul a {
-    color: #999;
+    color: #2f2f2f;
   }
 
   .short_about{
-    color: #999;
+    color: #2f2f2f;
     margin-right: 4em;
     margin-left: 2em;
   }
@@ -362,7 +362,7 @@ width:11%;
   .legal {
     display: flex;
     flex-wrap: wrap;
-    color: #999;
+    color: #2f2f2f;
   }
 
   .legal p {
@@ -410,8 +410,6 @@ width:11%;
  background-size: cover;
  background-repeat: no-repeat;
  height: calc(100vh - 25px);
-
-
   }
 
   #team-title h2{
@@ -424,82 +422,37 @@ width:11%;
   #team-title{
    padding: 40px;
   }
-  .profile-card-1 {
-    font-family: 'Philosopher', sans-serif;
-    position: relative;
-    float: left;
-    /* overflow: hidden; */
-    width: 100%;
-    color: rgb(56, 55, 55);
-    text-align: center;
-    min-height:370px!important;
-    border:none;
-    margin-bottom: 1rem;
-  }
 
-  /* .profile-card-1 .background {
-    width:100%;
-    vertical-align: top;
-    opacity: 0.9;
-    -webkit-filter: blur(5px);
-    filter: blur(5px);
-     -webkit-transform: scale(1.8);
-    transform: scale(2.8);
-  } */
-  .profile-card-1 .card-content {
-    /* width: 100%; */
-    padding: 15px 25px;
-    position: absolute;
-    left: 0;
-    top: 50%;
+  .card-body{
+
+    font-family: 'Philosopher', sans-serif;
+
   }
-  .profile-card-1 .profile {
+ 
+  .profile-photo{
     border-radius: 50%;
-    position: absolute;
-    bottom: 70%;
-    left: 50%;
     max-width: 100px;
+    max-height: 100px;
     opacity: 1;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(255, 255, 255, 1);
-    -webkit-transform: translate(-50%, 0%);
-    transform: translate(-50%, 0%);
+    margin-left: 94px;
   }
-  .profile-card-1 h2 {
-    margin: -25%;
-    font-weight: 600;
-    font-size:25px;
-    padding-bottom: 80px;
-    color: rgb(56, 55, 55);
-  }
+ 
 
-  .profile-card-1 p{
-    margin: 5px;
-   display: block;
+  .team-cards i{
+    font-size: 30px;
+    color: rgb(56, 55, 55);
+    border: 1px solid rgb(56, 55, 55);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 38px;
   }
-  .profile-card-1 i {
-    display: inline-block;
-      font-size: 30px;
-      color: rgb(56, 55, 55);
-      text-align: center;
-      border: 1px solid white;
-      width: 40px;
-      height: 40px;
-      line-height: 38px;
-      border-radius: 50%;
-      margin:0 auto;
-  }
-  .profile-card-1 .icon-block{
-      float:left;
-      width:100%;
-      margin-top:15px;
-  }
-  .profile-card-1 .icon-block a{
-      text-decoration:none;
-  }
-  .profile-card-1 i:hover {
+ 
+  .team-cards i:hover {
     background-color:#fff;
-    color:#2E3434;
+    color:#378484;
     text-decoration:none;
   }
 
