@@ -36,7 +36,7 @@ function recipeCards(data) {
   //clear innerhtml el
   recipeEl.innerHTML = "";
   // for loop to cycle through index
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 8; i++) {
     
     //data I want to display in cards
 
