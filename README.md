@@ -24,7 +24,6 @@ A one stop webpage to get all the nutritional values of any searched food items 
 
 This week we were challenged to work collaboratively with a team of peers to build this webpage from concept to deployment. Our objective was to have a minimum viable product ready for release.
 <br>
-<br>
 
 ## Screenshot
 ![Screenshot of the website](/images/BN-screenshot.png)
@@ -35,9 +34,6 @@ This week we were challenged to work collaboratively with a team of peers to bui
 
 - Live Site URL: https://preshy59.github.io/group23_project/
 <br>
-<br>
-
-
 
 
 ## Our process
@@ -63,7 +59,6 @@ For the most part the newest part of building this page was learning to work in 
 
 We've also learned the importance of collaborative learning and sharing of ideas to foster creativity. Through this process, we have challenged ourselves to continue our learning on integrating two different API's and retrieving information from the database to display on our web application.
 <br>
-<br>
 
 
 
@@ -71,7 +66,6 @@ We've also learned the importance of collaborative learning and sharing of ideas
 
 For future development, our aim is to introduce a feature that provides users with healthy smoothie recipes to complement their healthy meal choices.
 Additionally, we will include a health and wellness blog to provide users with informative articles on healthy eating and wellness.
-<br>
 <br>
 
 
