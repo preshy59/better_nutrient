@@ -455,11 +455,7 @@ width:11%;
   /* team cards */
 
   #team-cards{
- /* background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(./images/AdobeStock_313609653.jpeg);
- /* background-size: cover;
- background-repeat: no-repeat; */
- height: 90%;
- margin-bottom: 40px;
+ margin-bottom: 100px;
   }
 
   #team-title h2{
@@ -542,9 +538,7 @@ margin-bottom: 30px;
   }
   
   @media screen and (min-width: 40.375em) {
-    /* .footer > * {
-        flex: 1 100%;
-    } */
+   
     .footer__nav > * {
       flex: 1;
     }
