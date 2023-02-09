@@ -107,6 +107,17 @@ body.dark {
 
 .nav-link {
   color: #000000 !important;
+  width: 100px;
+  color: #fff;
+  cursor: pointer;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+}
+
+.nav-link:hover{
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(12, 12, 12, 0.75);
 }
 
 .home{
@@ -310,7 +321,7 @@ width:11%;
     color: #2f2f2f;
     background-color: #fff;
     border-top: 1px solid #e5e5e5;
-    background-image: url(../AdobeStock_313609653.jpeg)!important;
+    background-image: url(../images/AdobeStock_313609653.jpeg)!important;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -392,6 +403,15 @@ width:11%;
     margin-right: 1.25em;
   }
   
+  a.navbar-brand{
+    padding: 0px;;
+  }
+
+  .madeBy{
+  padding-right: 30px !important; 
+
+  }
+
   .nav__ul a {
     color: #2f2f2f;
   }
@@ -451,7 +471,9 @@ width:11%;
   .team-card-body{
     font-family: 'Philosopher', sans-serif;
   color: rgb(56, 55, 55)!important;
-   background-image: url(../AdobeStock_313609653.jpeg)!important;
+   background-image: url(../images/AdobeStock_313609653.jpeg)!important;
+   /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   }
  
   .profile-photo{
