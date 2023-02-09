@@ -303,9 +303,9 @@ width:11%;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #2f2f2f;
-    background-color: #fff;
+    background-color: white;
     border-top: 1px solid #e5e5e5;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(./images/AdobeStock_313609653.jpeg);
+    background-image: url(../AdobeStock_313609653.jpeg)!important;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -430,9 +430,6 @@ width:11%;
   /* team cards */
 
   #team-cards{
- /* background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(./images/AdobeStock_313609653.jpeg);
- /* background-size: cover;
- background-repeat: no-repeat; */
  height: 90%;
  margin-bottom: 40px;
   }
@@ -448,7 +445,11 @@ width:11%;
   }
 
   .card-body{
-    font-family: 'Philosopher', sans-serif;
+  font-family: 'Philosopher', sans-serif;
+  color: rgb(56, 55, 55)!important;
+   background-image: url(../AdobeStock_313609653.jpeg)!important;
+   /* background-size: cover; */
+  /* background-repeat: no-repeat; */
 
   }
  
@@ -478,6 +479,8 @@ width:11%;
     color:#378484;
     text-decoration:none;
   }
+
+ 
 
   /* --------recipe cards-------- */
 #recipe-card{
