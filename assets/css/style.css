@@ -189,7 +189,9 @@ width:11%;
 
 /* search section css */
 
-
+#search{
+  background-color: inherit;
+}
 #quote{
     color: #1a6c51;
     text-align: center;
@@ -205,7 +207,9 @@ width:11%;
     flex-direction: column;
     text-align: center;
     border: none;
-    background-color: white;
+    background-color: inherit;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 #form{
@@ -218,7 +222,7 @@ width:11%;
     display: block;
     width: 100%;
     margin: 0 30%;
-    height: 80px;
+    height: 50px;
     background-color: #f0f8ff;
     border: 2px solid #1a6c51;
     border-radius: 60px;
@@ -240,9 +244,10 @@ width:11%;
 #search-button{
     background-color: #1a6c51;
     color: white;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
     border-radius: 40px;
+    padding: 10px 20px;
      }
 
 .database{
