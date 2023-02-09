@@ -60,18 +60,19 @@ function recipeCards(data) {
     // console.log(data.hits[0].recipe.url)
 
     let recipeCard = `<div class="card" id="recipe-card" style="width: 20rem;">
-  <img class="card-img-top" src=${recipeImg} alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">${recipeTitle}</h5>
-    <p>Ingredients:</p>
-    <li class="list-group-item">${ingredientOne}</li>
-    <li class="list-group-item">${ingredientTwo}</li>
-    <li class="list-group-item">${ingredientThree}</li>
-    <li class="list-group-item">${ingredientFour}</li>
-    <li class="list-group-item">${ingredientFive}</li> 
-    <a href=${urlButton} class="btn btn-primary" id="recipeBtn">Get full recipe!</a>
-  </div>
-</div>`
+    <img class="card-img-top" src=${recipeImg} alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">${recipeTitle}</h5>
+      <p>Ingredients:</p>
+      ${ingredientOne ? `<li class="list-group-item">${ingredientOne}</li>` : ""}
+      ${ingredientTwo ? `<li class="list-group-item">${ingredientTwo}</li>` : ""}
+  
+      ${ingredientThree ? `<li class="list-group-item">${ingredientThree}</li>` : ""}
+      ${ingredientFour ? `<li class="list-group-item">${ingredientFour}</li>` : ""}
+      ${ingredientFive ? `<li class="list-group-item">${ingredientFive}</li>` : ""}
+      <a href=${urlButton} class="btn btn-primary" id="recipeBtn">Get full recipe!</a>
+    </div>
+  </div>`
 
     recipeEl.innerHTML += recipeCard;
 
