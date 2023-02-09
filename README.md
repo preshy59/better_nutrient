@@ -22,13 +22,13 @@ A one stop webpage to get all the nutritional values of any searched food items 
 This week we were challenged to work collaboratively with a team of peers to build this webpage from concept to deployment.
 
 ### Screenshot
-
+![Screenshot of the website](/images/BN-screenshot.png)
 
 
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://preshy59.github.io/group23_project/
 
 
 
