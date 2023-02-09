@@ -454,7 +454,7 @@ width:11%;
 
   .card-body{
     font-family: 'Philosopher', sans-serif;
-
+    color: black !important;
   }
  
   .profile-photo{
