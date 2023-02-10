@@ -26,7 +26,7 @@ This week we were challenged to work collaboratively with a team of peers to bui
 <br>
 
 ## Screenshot
-![Screenshot of the website](/images/BN-screenshot.png)
+![Screenshot of the website](/assets/images/BN-screenshot.png)
 
 
 
