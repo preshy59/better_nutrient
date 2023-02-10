@@ -41,7 +41,7 @@ body.dark {
 
 .checkbox:checked + .label .ball {
   transform: translateX(24px);
-  background-color: rgb(65, 64, 64);
+  background-color: #1a6c51;
 }
 
 
@@ -113,6 +113,7 @@ body.dark {
   text-align:center;
   border: none;
   background-size: 300% 100%;
+  border-radius: 4em;
 }
 
 .nav-link:hover{
