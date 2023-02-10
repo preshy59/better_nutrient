@@ -284,27 +284,31 @@ body.dark {
 .nutrient {
   display: flex;
   flex-direction: column;
+  margin: 10px 20px;
 
 
 }
 
 #nurient_value {
-  /* margin: auto; */
+  margin: auto;
   width: auto !important;
   align-items: center;
   color: #1a6c51;
-  border: #1a6c51;
+  
 
 }
 
 #nurient_value h1 {
   text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
 }
 
 #nurient_value p {
   font-size: 20px;
-  padding: 5px;
+  padding-bottom: 5px;
   text-align: center;
+  margin: 0;
 }
 
 .recipe {
