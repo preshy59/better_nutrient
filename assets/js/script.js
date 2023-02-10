@@ -7,7 +7,7 @@ $(document).ready(function () {
   // Variable to retrieve HTML elements using their ID's - JK
   var searchButton = document.getElementById("search-button");
   var userInput = document.getElementById("search-input");
- 
+
 
   // Event listener to "searchButton" HTML element when the button is clicked - JK
   searchButton.addEventListener("click", function (event) {
@@ -37,7 +37,7 @@ function recipeCards(data) {
   recipeEl.innerHTML = "";
   // for loop to cycle through index
   for (let i = 0; i < 8; i++) {
-    
+
     //data I want to display in cards
 
     //title
@@ -54,7 +54,7 @@ function recipeCards(data) {
     let ingredientThree = data.hits[i].recipe.ingredientLines[2];
     let ingredientFour = data.hits[i].recipe.ingredientLines[3];
     let ingredientFive = data.hits[i].recipe.ingredientLines[4];
-  
+
     //URL
     let urlButton = data.hits[i].recipe.url;
     // console.log(data.hits[0].recipe.url)
@@ -97,48 +97,46 @@ function fetchRecipe(foodItem) {
 // function to obtain data from the ninjas API-EO
 function exploreNutrientSearch(choiceofFood) {
 
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '565b910ef1msh5378420bcc0f262p1a4229jsnb6c6b7e6740d',
-            'X-RapidAPI-Host': 'nutrition-by-api-ninjas.p.rapidapi.com'
-        }
-    };
-    
-    fetch(`https://nutrition-by-api-ninjas.p.rapidapi.com/v1/nutrition?query=${choiceofFood}`, options)
-        .then(response => response.json())
-        .then((deatils) => {
-         console.log(deatils);
-         nutrientDetails(deatils);
-        
-        });
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '565b910ef1msh5378420bcc0f262p1a4229jsnb6c6b7e6740d',
+      'X-RapidAPI-Host': 'nutrition-by-api-ninjas.p.rapidapi.com'
     }
+  };
 
-    //function that display the nutrient as obtain from the URL based on user input-EO
-    function nutrientDetails(foodDetails) {
-        nutrientData.innerHTML ="";
+  fetch(`https://nutrition-by-api-ninjas.p.rapidapi.com/v1/nutrition?query=${choiceofFood}`, options)
+    .then(response => response.json())
+    .then((deatils) => {
+      console.log(deatils);
+      nutrientDetails(deatils);
 
-        let productName = foodDetails[0].name
-        let totalCalories = foodDetails[0].calories;
-        let carbs = foodDetails[0].carbohydrates_total_g;
-        let chole = foodDetails[0].cholesterol_mg;
-        let fatSat = foodDetails[0].fat_saturated_g;
-        let totalFat =foodDetails[0].fat_total_g;
-        let fiber =foodDetails[0].fiber_g;
-        let potassium =foodDetails[0].potassium_mg;
-        let protein =foodDetails[0].protein_g;
-        let size =foodDetails[0].serving_size_g;
-        let soduim =foodDetails[0].sodium_mg;
-        let sugar =foodDetails[0].sugar_g;
-    
-       
-        console.log(productName);
-        nutrientData.innerHTML = ` <div class="card" style="width: 18rem;" id="nurient_value">
+    });
+}
+
+//function that display the nutrient as obtain from the URL based on user input-EO
+function nutrientDetails(foodDetails) {
+  nutrientData.innerHTML = "";
+
+  let productName = foodDetails[0].name
+  let totalCalories = foodDetails[0].calories;
+  let carbs = foodDetails[0].carbohydrates_total_g;
+  let fatSat = foodDetails[0].fat_saturated_g;
+  let totalFat = foodDetails[0].fat_total_g;
+  let fiber = foodDetails[0].fiber_g;
+  let potassium = foodDetails[0].potassium_mg;
+  let protein = foodDetails[0].protein_g;
+  let size = foodDetails[0].serving_size_g;
+  let soduim = foodDetails[0].sodium_mg;
+  let sugar = foodDetails[0].sugar_g;
+
+
+  console.log(productName);
+  nutrientData.innerHTML = ` <div class="card" style="width: 18rem;" id="nurient_value">
             <div class="card-body">
             <h1> Basic Nutrient of ${productName}</h1>
                 <p>Calories: ${totalCalories} </p>
                 <p>Carbohydrate: ${carbs}g</p>
-                <p>Cholesterol: ${chole}mg</p>
                 <p>Fat_saturated: ${fatSat}g</p>
                 <p>Fat_Total: ${totalFat}g</p>
                 <p>Fiber: ${fiber}g</p>
@@ -149,6 +147,6 @@ function exploreNutrientSearch(choiceofFood) {
                 <p>Sugar: ${sugar}g</p>
                 </div>
             </div>`
-        displayNutrient.append(nutrientData);
+  displayNutrient.append(nutrientData);
 
-    }
+}
